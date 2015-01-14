@@ -18,7 +18,7 @@ class reCAPTCHA {
 	}
 
 	public function getCaptcha($class = 'g-recaptcha') {
-		return '<div class="g-recaptcha" data-sitekey="' . $this->public_key . '"></div>';
+		return '<div class="' $class '" data-sitekey="' . $this->public_key . '"></div>';
 	}
 
 	public function outputCaptcha($class = 'g-recaptcha') {
