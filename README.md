@@ -3,6 +3,7 @@ Quick little PHP class for using the new version of reCAPTCHA
 
 **Example**
 
+```php
 <?php
 	$secret_key = 'YOUR KEY';
 	$public_key = 'YOUR KEY';
@@ -33,3 +34,4 @@ Quick little PHP class for using the new version of reCAPTCHA
 		</form>
 	</body>
 </html>
+```
