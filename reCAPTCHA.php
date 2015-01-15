@@ -5,6 +5,9 @@ class reCAPTCHA {
 	private $public_key;
 
 	public function __construct($private_key, $public_key) {
+		if(empty($private_key) || empty($public_key)) {
+			throw new InvalidArgumentException('Both the private and public keys are required.');
+		}
 		$this->private_key = $private_key;
 		$this->public_key = $public_key;
 	}
